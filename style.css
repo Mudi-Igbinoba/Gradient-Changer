@@ -1,0 +1,50 @@
+/* =============
+    General
+=================*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+button {
+    font-size: 1rem;
+    font-family: 'Clash Display', sans-serif;
+}
+
+body {
+    height: 100vh;
+    color: #f0efef;
+}
+
+main {
+    display: flex;
+    background: linear-gradient(to left, #780206, #061161);
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    text-shadow: 0px 0px 5px #000;
+    text-align: center;
+}
+
+button {
+    background: #f0efefb6;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    color: #313131;
+    transition: 500ms;
+    font-weight: bold;
+}
+
+button:hover,
+button:active {
+    color: #f0efef;
+    background: #313131;
+}
