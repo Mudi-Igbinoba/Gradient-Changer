@@ -29,8 +29,21 @@ main {
 }
 
 h1 {
-    text-shadow: 0px 0px 5px #000;
+    text-shadow: 0px 0px 50px #000;
     text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 0px 0px 50px #000;
+}
+
+p > i {
+    margin: 0 0.6em;
 }
 
 button {
@@ -40,7 +53,7 @@ button {
     cursor: pointer;
     color: #313131;
     transition: 500ms;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 button:hover,
