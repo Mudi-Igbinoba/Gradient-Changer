@@ -86,7 +86,7 @@ git clone https://github.com/Mudi-Igbinoba/Gradient-Changer/
 
 ## Author
 
-- Website - [Mudi Igbinoba](https://www.mudee.netlify.app)
+- Website - [Mudi Igbinoba](https://mudee.netlify.app/)
 - Frontend Mentor - [@mudi-igbinoba](https://www.frontendmentor.io/profile/mudi-igbinoba)
 - Twitter - [@Mudi_Igbinoba](https://www.twitter.com/mudi_igbinoba)
 - Github - [@mudi-igbinoba](https://github.com/mudi-igbinoba)
