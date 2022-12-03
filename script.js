@@ -28,7 +28,7 @@ nextBtn.addEventListener('click', () => {
         ${arrayOfGradients[counter][1]}
     `;
 
-    main.style.background = `linear-gradient(to left, ${arrayOfGradients[counter][0]}, ${arrayOfGradients[counter][1]})`;
+    main.style.background = `linear-gradient(to right, ${arrayOfGradients[counter][0]}, ${arrayOfGradients[counter][1]})`;
 
     counter++;
 });
@@ -44,6 +44,6 @@ prevBtn.addEventListener('click', () => {
         ${arrayOfGradients[counter][1]}
     `;
 
-    main.style.background = `linear-gradient(to left, ${arrayOfGradients[counter][0]}, ${arrayOfGradients[counter][1]})`;
+    main.style.background = `linear-gradient(to right, ${arrayOfGradients[counter][0]}, ${arrayOfGradients[counter][1]})`;
     counter--;
 });

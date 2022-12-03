@@ -28,7 +28,7 @@ body {
 
 main {
     display: flex;
-    background: linear-gradient(to left, #780206, #061161);
+    background: linear-gradient(to right, #780206, #061161);
     justify-content: space-between;
     align-items: center;
     height: 100%;
