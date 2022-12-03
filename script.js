@@ -14,6 +14,7 @@ const arrLength = arrayOfGradients.length;
 const main = document.querySelector('main');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
+const gradientText = document.getElementById('gradient');
 let counter = 0;
 
 nextBtn.addEventListener('click', () => {
@@ -21,7 +22,14 @@ nextBtn.addEventListener('click', () => {
         counter = 0;
     }
 
+    gradientText.innerHTML = `
+        ${arrayOfGradients[counter][0]}
+        <i class="fa-solid fa-arrow-right"></i>
+        ${arrayOfGradients[counter][1]}
+    `;
+
     main.style.background = `linear-gradient(to left, ${arrayOfGradients[counter][0]}, ${arrayOfGradients[counter][1]})`;
+
     counter++;
 });
 
@@ -29,6 +37,12 @@ prevBtn.addEventListener('click', () => {
     if (counter === 0) {
         counter = arrLength - 1;
     }
+
+    gradientText.innerHTML = `
+        ${arrayOfGradients[counter][0]}
+        <i class="fa-solid fa-arrow-right"></i>
+        ${arrayOfGradients[counter][1]}
+    `;
 
     main.style.background = `linear-gradient(to left, ${arrayOfGradients[counter][0]}, ${arrayOfGradients[counter][1]})`;
     counter--;
