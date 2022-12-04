@@ -2,47 +2,21 @@
     General
 =================*/
 
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    overflow: hidden;
 }
 
 body,
 button {
     font-size: 1rem;
     font-family: 'Clash Display', sans-serif;
-}
-
-h1,
-p {
-    text-shadow: 0px 0px 50px #000;
-    text-align: center;
-}
-
-body {
-    height: 100vh;
-    color: #f0efef;
-}
-
-main {
-    display: flex;
-    background: linear-gradient(to right, #780206, #061161);
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-p {
-    margin: 0;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-}
-
-p > i {
-    margin: 0 0.6em;
 }
 
 button {
@@ -59,4 +33,299 @@ button:hover,
 button:active {
     color: #f0efef;
     background: #313131;
+}
+
+body {
+    color: #313131;
+}
+
+main {
+    position: relative;
+    background: linear-gradient(to right, #780206, #061161);
+    min-height: calc(100vh - 127px);
+}
+
+h1 {
+    font-family: 'Telma', cursive;
+    color: #ba904f;
+    background-image: -webkit-linear-gradient(0deg, #ba904f 0%, #cb1eb7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* =============
+    Header
+=================*/
+header h1 {
+    font-size: 2rem;
+}
+
+header .top,
+header .bottom {
+    padding: 1em 0;
+}
+
+header .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 22%);
+}
+
+header .btns,
+#menuBtn {
+    display: none;
+}
+
+header .btns {
+    font-size: 0;
+}
+
+#menuBtn i {
+    margin-right: 1em;
+}
+
+#addToGradientBtn {
+    border-right: 1px solid #313131;
+}
+
+#viewCssBtn {
+    border-left: 1px solid #313131;
+}
+
+#gradientText {
+    margin: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#previewColor1,
+#previewColor2 {
+    padding: 0.25em 0.8em;
+    border: 1px solid #313131;
+}
+
+#gradientText i {
+    margin: 0 0.6em;
+}
+
+#previewColor1 {
+    background: #780206;
+}
+
+#previewColor2 {
+    background: #061161;
+}
+
+#gradientColor1 {
+    margin-left: 0.5em;
+}
+
+#gradientColor2 {
+    margin-right: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+    header .bottom {
+        justify-content: space-between;
+        padding: 0em;
+    }
+
+    header .btns,
+    #menuBtn {
+        display: block;
+    }
+
+    #gradientText {
+        margin-right: 6em;
+    }
+}
+
+/* =============
+    Main
+=================*/
+main .container {
+    min-height: calc(100vh - 300px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#colorName {
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+    color: #f0efef;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0px 0px 0px 100px #000;
+}
+
+/* =============
+    Loader Screen
+=================*/
+#loader {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#loader img {
+    max-width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* =============
+    Modal
+=================*/
+.modal {
+    background-color: #fff;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-45%);
+    width: 50%;
+    height: 250px;
+    border-radius: 10px;
+    padding: 1.5em;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.modal-bg,
+.overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    overflow-y: scroll;
+    padding: 2em;
+}
+
+.overlay div {
+    width: 32%;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #313131;
+    margin: 1em 0;
+}
+
+@media screen and (min-width: 992px) {
+    .modal {
+        width: 40%;
+    }
+}
+
+/* =======================
+    addToGradient Modal
+======================= */
+#addToGradient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+#addToGradient p,
+#viewCss p {
+    color: #000;
+    text-align: center;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#colorInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#colorInput input {
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+}
+
+#saveGradient button,
+#copyCssBtn {
+    padding: 0.8em;
+    border-radius: 10px;
+    background: #000;
+    color: #f0efef;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0em;
+}
+
+#saveGradient button:hover,
+#saveGradient button:active,
+#copyCssBtn:hover,
+copyCssBtn:active {
+    color: #f0efef;
+    background: #061161;
+}
+
+@media screen and (min-width: 654px) {
+    #saveGradientBtn {
+        margin-top: 1em;
+    }
+
+    #colorInput {
+        height: 100px;
+    }
+}
+
+/* =======================
+    viewCss Modal
+======================= */
+#viewCss {
+    display: none;
+    width: 70%;
+}
+
+#cssCode {
+    background: #f0efefb6;
+    display: block;
+    white-space: nowrap;
+    padding: 1em;
+    overflow-x: scroll;
+    margin-top: 1em;
+}
+
+#copyCssBtn {
+    margin-top: 1em;
+}
+
+@media screen and (min-width: 992px) {
+    #viewCss {
+        width: 50%;
+    }
 }

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
-            href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap"
+            href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&f[]=telma@900,300,1,700,500,400&display=swap"
             rel="stylesheet"
         />
         <script
@@ -16,24 +16,97 @@
         <title>Gradient Changer</title>
     </head>
     <body>
-        <main>
-            <button id="prevBtn">
-                <i class="fa-solid fa-chevron-left"></i> Prev
-            </button>
+        <!-- <section id="loader">
+            <div class="container">
+                <h1>GradientGrids</h1>
+                <img src="images/loader.gif" alt="Logo" />
+            </div>
+        </section> -->
+        <header>
+            <div class="top">
+                <h1>GradientGrids</h1>
+            </div>
+            <div class="bottom">
+                <button id="menuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                    View all gradients
+                </button>
 
-            <div>
-                <h1>Gradient Changer</h1>
-                <p id="gradient">
-                    #780206
+                <p id="gradientText">
+                    <span id="previewColor1"></span>
+                    <span id="gradientColor1">#780206</span>
                     <i class="fa-solid fa-arrow-right"></i>
-                    #061161
+                    <span id="gradientColor2">#061161</span>
+                    <span id="previewColor2"></span>
                 </p>
+
+                <div class="btns">
+                    <button id="addToGradientBtn">
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </button>
+                    <button id="viewCssBtn">
+                        <i class="fa-solid fa-code"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="addToGradientBg" class="modal-bg">
+                <div id="addToGradient" class="modal">
+                    <form id="saveGradient">
+                        <p>Pick 2 colors to add new gradient</p>
+
+                        <div id="colorInput">
+                            <input id="color1" type="color" value="#780206" />
+                            <input id="color2" type="color" value="#061161" />
+                        </div>
+
+                        <button>Save Gradient</button>
+                    </form>
+                </div>
             </div>
 
-            <button id="nextBtn">
-                Next <i class="fa-solid fa-chevron-right"></i>
-            </button>
+            <div id="viewCssBg" class="modal-bg">
+                <div id="viewCss" class="modal">
+                    <p>Copy Css Code</p>
+
+                    <code id="cssCode">
+                        background: #780206; /* fallback for old browsers */
+                        <br />
+                        background: -webkit-linear-gradient(to right, #780206,
+                        #061161); /* Chrome 10-25, Safari 5.1-6 */ <br />
+                        background: linear-gradient(to right, #780206, #061161);
+                        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera
+                        12+, Safari 7+ */ <br />
+                    </code>
+
+                    <button id="copyCssBtn">Click To Copy</button>
+                </div>
+            </div>
+
+            <!-- <div class="overlay">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div> -->
+            <p id="colorName">Shady Day</p>
+            <div class="container">
+                <button id="prevBtn">
+                    <i class="fa-solid fa-chevron-left"></i> Prev
+                </button>
+
+                <button id="nextBtn">
+                    Next <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
         </main>
+
         <script src="script.js"></script>
     </body>
 </html>
