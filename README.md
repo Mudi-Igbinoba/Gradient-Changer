@@ -40,8 +40,11 @@ Users should be able to:
 - #4776E6, #8E54E9
 
 ### Screenshot
+Loading Page
+![download](https://user-images.githubusercontent.com/65790714/205550419-9a0c559e-4f01-49ba-bcee-c9a3b23c31b2.jpg)
+Main Page
+![download](https://user-images.githubusercontent.com/65790714/205550493-6210c292-5805-4750-bba3-4467f4050201.jpg)
 
-![Gradient Changer](https://user-images.githubusercontent.com/65790714/205431469-13499d67-f362-4f45-ad9c-7de808846ff6.jpg)
 
 
 ### Links
