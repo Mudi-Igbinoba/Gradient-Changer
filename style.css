@@ -226,7 +226,7 @@ main .container {
 }
 
 #overlay div {
-    width: 32%;
+    width: 48%;
     height: 200px;
     border-radius: 15px;
     color: white;
@@ -240,6 +240,10 @@ main .container {
 @media screen and (min-width: 992px) {
     .modal {
         width: 40%;
+    }
+
+    #overlay div {
+        width: 32%;
     }
 }
 
