@@ -1,5 +1,5 @@
-# Gradient Changer
-A one page website that changes its background gradient sequentially on clicking on the previous and next button.
+# Gradient Grids
+A one page website that changes its background gradient sequentially on clicking on the previous and next button and also holds more functionalities.
 
 ## Table of contents
 
@@ -12,6 +12,7 @@ A one page website that changes its background gradient sequentially on clicking
   - [Built with](#built-with)
   - [Tools](#tools)
   - [Setup](#setup)
+  - [Potential Errors](#potential-errors)
 - [Author](#author)
 
 
@@ -25,7 +26,13 @@ Users should be able to:
 - View the initial background gradient (#780206 and #061161) on the page
 - Click on the next button to change the background gradient to the next gradient in the default colors list
 - Click on the previous button to change the background gradient to the previous gradient in the default colors list
-- View the colour codes of the gradient as it changes
+- View the colour codes and names of the gradient as it changes
+- View the loading page when the site initially loads
+- Click on the add button to show and hide a modal box that allows you to choose two colors to create a gradient.
+- Click on the save gradient button in the aforementioned modal box to view, save and add the newly created gradient to the list
+- Click on the view css button to open and close a modal box that allows you to view the gradient's css code.
+- Click on the copy css button in the aforementioned modal box to copy the gradient's css code. 
+- Click on the the hamburger menu icon to open and close a scrollable overlay containing all the gradients as cards.
 
 ### Default Colors List
 - #FBD3E9, #BB377D
@@ -44,7 +51,6 @@ Loading Page
 ![download](https://user-images.githubusercontent.com/65790714/205550419-9a0c559e-4f01-49ba-bcee-c9a3b23c31b2.jpg)
 Main Page
 ![download](https://user-images.githubusercontent.com/65790714/205550493-6210c292-5805-4750-bba3-4467f4050201.jpg)
-
 
 
 ### Links
