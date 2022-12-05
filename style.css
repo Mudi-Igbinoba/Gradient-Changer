@@ -203,7 +203,7 @@ main .container {
 }
 
 .modal-bg,
-.overlay {
+#overlay {
     display: none;
     position: absolute;
     width: 100%;
@@ -215,8 +215,8 @@ main .container {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.overlay {
-    display: flex;
+#overlay {
+    display: none;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -225,12 +225,16 @@ main .container {
     padding: 2em;
 }
 
-.overlay div {
+#overlay div {
     width: 32%;
     height: 200px;
     border-radius: 15px;
-    background-color: #313131;
+    color: white;
     margin: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 @media screen and (min-width: 992px) {
