@@ -49,7 +49,7 @@ Main Page
 
 ### Links
 
-- Solution URL: [https://github.com/Mudi-Igbinoba/Gradient-Changer/](https://github.com/Mudi-Igbinoba/Gradient-Changer/)
+- Solution URL: [https://github.com/Mudi-Igbinoba/Gradient-Changer/tree/day-two](https://github.com/Mudi-Igbinoba/Gradient-Changer/tree/day-two)
 - Live Site URL: [https://mudi-igbinoba.github.io/Gradient-Changer/](https://mudi-igbinoba.github.io/Gradient-Changer/)
 
 ## My process
@@ -85,6 +85,9 @@ git clone https://github.com/Mudi-Igbinoba/Gradient-Changer/
 - Once the files are on your machine, open the Gradient-Changer folder in [Visual Studio Code](https://code.visualstudio.com/).
 
 - With the files open in Visual Studio Code, press the **Go Live** button at the bottom of the window to launch the files with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+
+### Potential Errors
+If the live site does not look like the the screenshots above, try clearing your browser cache and reloading your site or better yet try loading the site in incognito mode
 
 
 ## Author
