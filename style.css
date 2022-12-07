@@ -73,16 +73,17 @@ header .bottom {
 
 header .bottom {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     z-index: 3;
     box-shadow: 0 1px 4px rgb(0 0 0 / 22%);
 }
 
-header .btns,
+/* header .btns,
 #menuBtn {
     display: none;
-}
+} */
 
 header .btns {
     font-size: 0;
@@ -149,6 +150,25 @@ header .btns {
     }
 }
 
+@media screen and (max-width: 767px) {
+    header .bottom {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        padding: 0;
+    }
+
+    header #addToGradientBtn,
+    header #viewCssBtn {
+        width: 50%;
+    }
+
+    header #gradientText {
+        padding: 1em 0;
+        text-align: center;
+    }
+}
+
 /* =============
     Main
 =================*/
@@ -196,9 +216,10 @@ main .container {
     left: 50%;
     transform: translateX(-50%) translateY(-45%);
     width: 50%;
-    height: 250px;
+    height: 300px;
     border-radius: 10px;
     padding: 1.5em;
+    z-index: 100;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
@@ -223,10 +244,11 @@ main .container {
     background-color: #fff;
     overflow-y: scroll;
     padding: 2em;
+    z-index: 100;
 }
 
 #overlay div {
-    width: 48%;
+    width: 90%;
     height: 200px;
     border-radius: 15px;
     color: white;
@@ -237,9 +259,35 @@ main .container {
     text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+    #overlay {
+        justify-content: center;
+    }
+
+    .modal {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #overlay div {
+        width: 48%;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .modal {
         width: 40%;
+    }
+
+    #overlay {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        overflow-y: scroll;
+        padding: 2em;
     }
 
     #overlay div {
@@ -271,7 +319,7 @@ main .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 90px;
     width: 200px;
     margin: 0 auto;
 }
@@ -280,6 +328,23 @@ main .container {
     cursor: pointer;
     width: 50px;
     height: 40px;
+}
+
+label {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+#gradientName {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em;
+    margin-bottom: 1.2em;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-family: 'Clash Display';
 }
 
 #saveGradient button,
@@ -304,10 +369,6 @@ copyCssBtn:active {
 @media screen and (min-width: 654px) {
     #saveGradientBtn {
         margin-top: 1em;
-    }
-
-    #colorInput {
-        height: 100px;
     }
 }
 
@@ -335,5 +396,11 @@ copyCssBtn:active {
 @media screen and (min-width: 992px) {
     #viewCss {
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #viewCss {
+        width: 90%;
     }
 }

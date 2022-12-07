@@ -51,6 +51,8 @@ const startFunctionality = () => {
                             <input id="color2" type="color" value="#061161" />
                         </div>
 
+                        <label for='gradientName'>Gradient Name:</label>
+                        <input id='gradientName' type='text' placeholder='Create a gradient name'/>
                         <button>Save Gradient</button>
                     </form>
                 </div>
@@ -132,6 +134,7 @@ const startFunctionality = () => {
     const color2 = document.getElementById('color2');
     const previewColor1 = document.getElementById('previewColor1');
     const previewColor2 = document.getElementById('previewColor2');
+    const gradientName = document.getElementById('gradientName');
 
     //Functions
     // View All Gradients Functionality
@@ -219,7 +222,11 @@ const startFunctionality = () => {
     // Save Gradient Form
     saveGradient.addEventListener('submit', (e) => {
         e.preventDefault();
-        arrayOfGradients.push([`${color1.value}`, `${color2.value}`, '']);
+        arrayOfGradients.push([
+            `${color1.value}`,
+            `${color2.value}`,
+            `${gradientName.value}`,
+        ]);
         counter = arrayOfGradients.length - 1;
 
         changeGradient();
