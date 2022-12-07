@@ -1,5 +1,5 @@
-# Gradient Changer
-A one page website that changes its background gradient sequentially on clicking on the previous and next button.
+# Gradient Grids
+A one page website that changes its background gradient sequentially on clicking on the previous and next button and also holds more functionalities.
 
 ## Table of contents
 
@@ -12,6 +12,7 @@ A one page website that changes its background gradient sequentially on clicking
   - [Built with](#built-with)
   - [Tools](#tools)
   - [Setup](#setup)
+  - [Potential Errors](#potential-errors)
 - [Author](#author)
 
 
@@ -25,7 +26,13 @@ Users should be able to:
 - View the initial background gradient (#780206 and #061161) on the page
 - Click on the next button to change the background gradient to the next gradient in the default colors list
 - Click on the previous button to change the background gradient to the previous gradient in the default colors list
-- View the colour codes of the gradient as it changes
+- View the colour codes and names of the gradient as it changes
+- View the loading page when the site initially loads
+- Click on the add button to show and hide a modal box that allows you to choose two colors to create a gradient.
+- Click on the save gradient button in the aforementioned modal box to view, save and add the newly created gradient to the list
+- Click on the view css button to open and close a modal box that allows you to view the gradient's css code.
+- Click on the copy css button in the aforementioned modal box to copy the gradient's css code. 
+- Click on the the hamburger menu icon to open and close a scrollable overlay containing all the gradients as cards.
 
 ### Default Colors List
 - #FBD3E9, #BB377D
@@ -40,13 +47,15 @@ Users should be able to:
 - #4776E6, #8E54E9
 
 ### Screenshot
-
-![Gradient Changer](https://user-images.githubusercontent.com/65790714/205431469-13499d67-f362-4f45-ad9c-7de808846ff6.jpg)
+Loading Page
+![download](https://user-images.githubusercontent.com/65790714/205550419-9a0c559e-4f01-49ba-bcee-c9a3b23c31b2.jpg)
+Main Page
+![download](https://user-images.githubusercontent.com/65790714/205550493-6210c292-5805-4750-bba3-4467f4050201.jpg)
 
 
 ### Links
 
-- Solution URL: [https://github.com/Mudi-Igbinoba/Gradient-Changer/](https://github.com/Mudi-Igbinoba/Gradient-Changer/)
+- Solution URL: [https://github.com/Mudi-Igbinoba/Gradient-Changer/tree/day-two](https://github.com/Mudi-Igbinoba/Gradient-Changer/tree/day-two)
 - Live Site URL: [https://mudi-igbinoba.github.io/Gradient-Changer/](https://mudi-igbinoba.github.io/Gradient-Changer/)
 
 ## My process
@@ -82,6 +91,9 @@ git clone https://github.com/Mudi-Igbinoba/Gradient-Changer/
 - Once the files are on your machine, open the Gradient-Changer folder in [Visual Studio Code](https://code.visualstudio.com/).
 
 - With the files open in Visual Studio Code, press the **Go Live** button at the bottom of the window to launch the files with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+
+### Potential Errors
+If the live site does not look like the the screenshots above, try clearing your browser cache and reloading your site or better yet try loading the site in incognito mode
 
 
 ## Author
